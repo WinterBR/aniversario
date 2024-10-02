@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../build/styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Meu aniversário: 04/12/2006</h1>
+            <p>Tempo que falta para ele chegar:</p>
+            <p id="countdown"></p>
+            <div class="tabela">
+                <ul class="tabela__info">
+                    <li class="tabela__info__item">
+                        <h2>Localização</h2>
+                        <p>Águas Mornas - SC</p>
+                    </li>
+                    <li class="tabela__info__item">
+                        <h2>Preço</h2>
+                        <p>139,99 R$</p>
+                    </li>
+                    <li class="tabela__info__item">
+                        <h2>Data</h2>
+                        <p>04/12/2024</p>
+                    </li>
+                    <li class="tabela__info__button">
+                        <button>
+                            Reservar
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="lanches"> <!--lanches-->
+        <div class="container">
+            <div class="degrad">
+                <div class="lanches__opcoes__itens-n" data-aos="fade-right">
+                    <div class="lanches__opcoes__itens-text">
+                        <h2>Churrasco</h2>
+                        <p>1. Picanha, 2. Maminha, 3. Costela, 4. Fraldinha, 5. Alcatra, 6. Cupim, 7. Coração de frango, 8. Linguiça toscana, 9. Filé mignon, 10. Contra-filé, 11. Entrecot, 12. Bisteca suína, 13. T-bone, 14. Carré de cordeiro, 15. Assado de tira, 16. Prime rib, 17. Costelinha de porco, 18. Espetinho de frango, 19. Paleta suína, 20. Short rib.</p>
+                    </div>
+                    <div class="lanches__opcoes__itens-img">
+                        <img src="./images/Churras.jpg" height="270px">
+                    </div>
+                </div>
+                <div class="lanches__opcoes__itens-r" data-aos="fade-left">
+                    <div class="lanches__opcoes__itens-img">
+                        <img src="./images/Frutosmar.jpg" height="270px">
+                    </div>
+                    <div class="lanches__opcoes__itens-text">
+                        <h2>Frutos do Mar</h2>
+                        <p>1. Camarão grelhado, 2. Lula frita, 3. Polvo à vinagrete, 4. Peixe empanado, 5. Lagosta grelhada, 6. Salmão grelhado, 7. Mexilhões ao vapor, 8. Ostra gratinada, 9. Sardinha assada, 10. Bacalhau à brás, 11. Caranguejo cozido, 12. Vieira grelhada, 13. Atum selado, 14. Tilápia grelhada, 15. Cavaquinha na manteiga, 16. Mariscos na chapa, 17. Anchova assada, 18. Siri mole empanado, 19. Robalo grelhado, 20. Truta defumada.</p>
+                    </div>
+                </div>
+                <div class="lanches__opcoes__itens-n" data-aos="fade-right">
+                    <div class="lanches__opcoes__itens-text">
+                        <h2>Pizza</h2>
+                        <p>1. Calabresa, 2. Marguerita, 3. Portuguesa, 4. Quatro queijos, 5. Frango com catupiry, 6. Mussarela, 7. Napolitana, 8. Pepperoni, 9. Toscana, 10. Rúcula com tomate seco, 11. Presunto e queijo, 12. Palmito, 13. Alho e óleo, 14. Escarola, 15. Atum, 16. Filé mignon com cheddar, 17. Camarão com catupiry, 18. Bacon com milho, 19. Abobrinha com parmesão, 20. Carne seca com requeijão.</p>
+                    </div>
+                    <div class="lanches__opcoes__itens-img">
+                        <img src="./images/pizza.jpg" height="270px">
+                    </div>
+                </div>
+                <div class="lanches__opcoes__itens-r" data-aos="fade-left">
+                    <div class="lanches__opcoes__itens-img">
+                        <img src="./images/sorvete.jpg" height="270px">
+                    </div>
+                    <div class="lanches__opcoes__itens-text">
+                        <h2>Sorvete</h2>
+                        <p>1. Chocolate, 2. Baunilha, 3. Morango, 4. Flocos, 5. Pistache, 6. Passas ao rum, 7. Abacaxi à francesa, 8. Frutas vermelhas, 9. Torta alemã, 10. Iogurte grego, 11. Doce de leite, 12. Caramelo salgado, 13. Avelã, 14. Cookies and cream, 15. Amarena, 16. Cheesecake de morango, 17. Manga, 18. Limão siciliano, 19. Menta com chocolate, 20. Café.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome</label>
+                <input type="text" name="name" placeholder="Seu nome" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" placeholder="Seu número" required>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 - Eduardo W. Todos os direitos reservados.</p>
+            <ul>
+                <li><a href="#">Política de Privacidade</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
