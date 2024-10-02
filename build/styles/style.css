@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  height: 600px;
+  width: 100%;
+}
+
+#countdown {
+  font-size: 40px;
+}
+
+header .tabela__info {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  background-color: #fff;
+  color: black;
+  margin-top: 5%;
+  margin-left: 10%;
+  padding: 0 12px;
+}
+header .tabela__info__button button {
+  height: 40px;
+  width: 110px;
+  background-color: rgb(91, 43, 125);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  white-space: nowrap;
+}
+header .tabela__info__button button:hover {
+  background-color: rgb(128, 85, 159);
+}
+
+#lanches h2 {
+  text-align: left;
+}
+#lanches .container {
+  margin: 0;
+  padding: 0;
+}
+#lanches .container .lanches__opcoes__itens-n {
+  padding-left: 20px;
+}
+#lanches .container .lanches__opcoes__itens-r img {
+  padding-right: 20px;
+}
+#lanches .container .degrad {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, rgb(101, 49, 38), #110402);
+  color: #fff;
+}
+#lanches .container .degrad > div {
+  display: flex;
+  color: #fff;
+  height: 270px;
+  background-color: transparent;
+  width: 100%;
+}
+
+#contato {
+  background-color: rgb(101, 49, 38);
+}
+#contato .container h2 {
+  padding: 43px;
+  color: #fff;
+}
+#contato .container form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+#contato .container form label {
+  color: #fff;
+  padding: 0 20px;
+}
+#contato .container form input {
+  width: 40%;
+  padding: 12px;
+  margin: 20px;
+}
+#contato .container form button {
+  height: 40px;
+  width: 110px;
+  background-color: rgb(91, 43, 125);
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+footer {
+  background: #270e0a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 640px) {
+  header {
+    justify-content: center;
+  }
+  header .tabela__info {
+    flex-direction: column;
+    padding: 0;
+  }
+  #lanches .container .degrad .lanches__opcoes__itens-r {
+    flex-direction: column-reverse;
+  }
+  #lanches .container .degrad > div {
+    flex-direction: column;
+    height: 100%;
+    padding: 0 2%;
+    align-items: center;
+  }
+  #lanches .container .degrad > div img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  #lanches .container .degrad .lanches__opcoes__itens-r {
+    flex-direction: column-reverse;
+  }
+  #lanches .container .degrad > div {
+    flex-direction: column;
+    height: 100%;
+    padding: 0 2%;
+    align-items: center;
+  }
+  #lanches .container .degrad > div img {
+    width: 760px;
+    max-width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+}
